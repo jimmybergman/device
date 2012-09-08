@@ -1,0 +1,25 @@
+{
+  "name": "device",
+  "version": "0.1.0",
+  "description": "Browser detection library based on express-device, but without the express part",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimmybergman/device.git"
+  },
+  "keywords": [
+    "browser",
+    "mobile",
+    "detection",
+    "user-agent",
+    "platform",
+    "desktop",
+    "tablet"
+  ],
+  "dependencies": {
+    "express-device" : ">= 0.2.0"
+  },
+
+  "author": "Jimmy Bergman <jimmy@sigint.se>",
+  "license": "MIT"
+}
