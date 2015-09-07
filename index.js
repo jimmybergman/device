@@ -1,9 +1,15 @@
 module.exports = {
-    useragent_is: function (ua) {
-        if (!ua || ua === '') {
+    useragent_is: function (ua, options) {
+        if (!ua) {
             // No user agent.
             return;
         }
+        if (typeof ua !== 'string') {
+            throw new Error('User agent must be a string');
+        }
+        options = options || {};
+        options.unknownDeviceType = options.unknownDeviceType || 'phone';
+
         // overwrite Flipboard user agent otherwise it's detected as a desktop
         if( ua.match(/FlipboardProxy/i) )
             ua = 'FlipboardProxy/1.1;  http://flipboard.com/browserproxy';
@@ -53,7 +59,7 @@ module.exports = {
             return 'bot';
         } else {
             // Otherwise assume it is a phone Device
-            return 'phone';
+            return options.unknownDeviceType;
         }
     }
 }
