@@ -16,10 +16,13 @@
     "desktop",
     "tablet"
   ],
-  "dependencies": {
-    "express-device" : ">= 0.2.0"
+  "scripts": {
+    "test": "mocha test/"
   },
-
+  "dependencies": {},
   "author": "Jimmy Bergman <jimmy@sigint.se>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.1"
+  }
 }
