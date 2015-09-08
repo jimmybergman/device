@@ -1,6 +1,6 @@
 {
   "name": "device",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Browser detection library based on express-device, but without the express part",
   "main": "index.js",
   "repository": {
