@@ -176,4 +176,10 @@ describe('device', function() {
             assert.equal(type, 'tv');
         });
     });
+    describe('30.Google Chromcast', function () {
+        it('should get device type tv', function () {
+            var type = device.useragent_is('CrKey');
+            assert.equal(type, 'tv');
+        });
+    });
 });
