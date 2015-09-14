@@ -18,7 +18,7 @@ module.exports = {
         if (ua.match(/GoogleTV|SmartTV|Internet TV|NetCast|NETTV|AppleTV|boxee|Kylo|Roku|DLNADOC|hbbtv|CE\-HTML/i)) {
             // if user agent is a smart TV - http://goo.gl/FocDk
             return 'tv';
-        } else if (ua.match(/Xbox|PLAYSTATION 3|Wii/i)) {
+        } else if (ua.match(/Xbox|PLAYSTATION 3|PLAYSTATION 4|Wii/i)) {
             // if user agent is a TV Based Gaming Console
             return 'tv';
         } else if (ua.match(/iP(a|ro)d/i) || (ua.match(/tablet/i) && !ua.match(/RX-34/i)) || ua.match(/FOLIO/i)) {
