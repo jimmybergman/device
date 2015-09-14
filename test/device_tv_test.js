@@ -164,4 +164,22 @@ describe('device', function() {
             assert.equal(type, 'tv');
         });
     });
+    describe('28.Sony PlayStation 4', function () {
+        it('should get device type tv', function () {
+            var type = device.useragent_is('Mozilla/5.0 (PlayStation 4 1.000) AppleWebKit/536.26 (KHTML, like Gecko)');
+            assert.equal(type, 'tv');
+        });
+    });
+    describe('29.Sony PlayStation 4', function () {
+        it('should get device type tv', function () {
+            var type = device.useragent_is('Mozilla/5.0 (PlayStation 4 1.52) AppleWebKit/536.26 (KHTML, like Gecko)');
+            assert.equal(type, 'tv');
+        });
+    });
+    describe('30.Google Chromcast', function () {
+        it('should get device type tv', function () {
+            var type = device.useragent_is('CrKey');
+            assert.equal(type, 'tv');
+        });
+    });
 });
